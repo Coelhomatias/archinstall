@@ -4,7 +4,7 @@ set -Eeuo pipefail
 
 # ---------- Config (override via env) ----------
 PROJECT_NAME="${PROJECT_NAME:-arch-me-later}"             # change default to your project name
-REPO_URL="${REPO_URL:-https://github.com/you/myenv.git}"
+REPO_URL="${REPO_URL:-https://github.com/Coelhomatias/archinstall.git}"
 REPO_REF="${REPO_REF:-main}"                      # branch/tag/commit
 INSTALL_DIR="${INSTALL_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/$PROJECT_NAME}"
 LOG_DIR="${LOG_DIR:-${XDG_STATE_HOME:-$HOME/.local/state}/$PROJECT_NAME}"
