@@ -77,7 +77,7 @@ else
 fi
 
 INSTALLER="$INSTALL_DIR/install.sh"
-[[ -x "$INSTALLER" ]] || die "Installer not found or not executable: $INSTALLER"
+[[ -f "$INSTALLER" ]] || die "Installer not found or not executable: $INSTALLER"
 
 info "Running installer: $INSTALLER"
-exec bash "$INSTALLER" "$@"
+bash "$INSTALLER" "$@"
